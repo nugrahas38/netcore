@@ -1,0 +1,31 @@
+﻿@model Lat_Core20170104.Model.BukuViewModel
+<h2>Data Buku</h2>
+
+
+<div class="row">
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Judul</td>
+                <td>Pengarang</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach ( var item in Model.AllBuku ) {
+                <tr>
+                    <td>@item.id</td>
+                    <td>@item.judul</td>
+                    <td>@item.pengarang</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
